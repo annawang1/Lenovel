@@ -11,16 +11,30 @@
     tools:context="com.learning.annawang.lenovel.MainActivity">
 
     <Button
-        android:id="@+id/btn_click"
+        android:id="@+id/btn_gmd"
         android:layout_width="300dp"
         android:layout_height="100dp"
-        android:text="GO" />
+        android:text="Google MD" />
+
+    <Button
+        android:id="@+id/btn_cmd"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_toRightOf="@id/btn_gmd"
+        android:text="Community MD" />
+
+    <Button
+        android:id="@+id/btn_oct"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_toRightOf="@id/btn_cmd"
+        android:text="Octicons" />
 
     <ListView
         android:id="@+id/lv_icons"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/btn_click"
+        android:layout_below="@id/btn_gmd"
         android:layout_marginTop="20dp"
         android:divider="#000000"
         android:dividerHeight="1dp"></ListView>

@@ -1,6 +1,7 @@
 package com.learning.annawang.lenovel;
 
 import android.content.Context;
+import android.text.SpannableString;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -26,8 +27,9 @@ public class IconsAdapter extends BaseAdapter {
     }
 
     @Override
-    public String getItem(int position) {
-        return mList.get(position);
+    public CharSequence getItem(int position) {
+//        return mList.get(position);
+        return SpannableString.valueOf(mList.get(position));
     }
 
     @Override
@@ -45,9 +47,13 @@ public class IconsAdapter extends BaseAdapter {
 
 
     public void add(String icon) {
-
         mList.add(icon);
         notifyDataSetChanged();
+    }
+
+    public void invalid() {
+        mList.clear();
+        notifyDataSetInvalidated();
     }
 
     @Override
