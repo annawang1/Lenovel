@@ -18,12 +18,7 @@ import java.util.List;
 
 public class IconsAdapter extends BaseAdapter {
 
-    private String[] mData = new String[]{"gmd-3d-rotation", "gmd_ac_unit", "gmd_access_alarm"
-            , "gmd_access_alarms", "gmd_access_time", "gmd_accessibility", "gmd_accessible"
-            , "gmd_account_balance", "gmd_account_balance_wallet"};
-
     private List<String> mList = new ArrayList<String>();
-//    private List<String> mList = Arrays.asList(mData);
 
     @Override
     public int getCount() {
@@ -48,11 +43,6 @@ public class IconsAdapter extends BaseAdapter {
 
     }
 
-    public void push(List<String> list) {
-        this.mList = list;
-//        mList.clear();
-//        mList = Arrays.asList(mData);
-    }
 
     public void add(String icon) {
 
